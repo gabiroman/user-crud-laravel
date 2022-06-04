@@ -1,3 +1,13 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer components {
+    .li-nav-menu{
+        @apply ml-3 py-3 font-semibold border-b-2 border-white hover:text-gray-700 hover:border-gray-700;
+    }
+
+    .li-option-nav-menu{
+        @apply py-3 font-semibold hover:text-gray-700;
+    }
+}
