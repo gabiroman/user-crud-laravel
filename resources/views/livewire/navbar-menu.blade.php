@@ -6,9 +6,9 @@
                 @livewire('li-menu', ['title' => 'Users', 'url' => route('user.index')])
             </ul>
             <ul class="list-none flex">
-                @livewire('li-option-nav-menu', ['title' => 'fa-solid fa-user'])
-                @livewire('li-option-nav-menu', ['title' => 'fa-solid fa-gear'])
-                @livewire('li-option-nav-menu', ['title' => 'fa-solid fa-bell'])
+                @livewire('li-option-nav-menu', ['title' => 'fa-solid fa-user', 'description' => Auth::user()->name])
+                @livewire('li-option-nav-menu', ['title' => 'fa-solid fa-gear', 'description' => ''])
+                @livewire('li-option-nav-menu', ['title' => 'fa-solid fa-bell', 'description' => ''])
                 <li class="li-option-nav-menu">
                     <form action="{{ route('logout') }}" method="post">
                         @csrf

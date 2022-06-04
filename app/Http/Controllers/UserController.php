@@ -13,6 +13,7 @@ class UserController extends Controller
     function __construct()
     {
         $this->middleware(['auth:sanctum']);
+        $this->middleware(['role:administrator|manager']);
     }
     /**
      * Display a listing of the resource.
